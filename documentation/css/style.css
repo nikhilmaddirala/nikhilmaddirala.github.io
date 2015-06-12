@@ -1,0 +1,267 @@
+/* CSS reset
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+ol, ul {
+    list-style: none
+}
+blockquote, q {
+    quotes: none
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Typography and main styles
+================================================== */
+body {
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 12px;
+    color: #777;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    line-height: 20px;
+    background:#fff;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {font-weight: inherit;}
+h1 {font-size: 34px;}
+h2 {    font-size: 30px}
+h3 {    font-size: 26px}
+h4 {    font-size: 22px}
+h5 {    font-size: 18px}
+h6 {    font-size: 12px}
+.subheader {    color: #777; margin-top:-10px;}
+
+p {    margin-bottom: 20px}
+em {    font-style: italic}
+strong {    font-weight: bold}
+.small {    font-size: 80%}
+.colored {    color: #ffbf44}
+a, a:visited {
+    text-decoration: none;
+    color: #444;
+}
+a:hover {
+    color: #ffbf44
+}
+|:-moz-any-link:focus {
+    outline: none
+}
+|:focus {
+    outline: none
+}
+a:active, a:focus, button {
+    border: none;
+    outline: none;
+}
+
+.container{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    margin-top:50px;
+}
+
+.content{
+    width: 640px;
+    padding-right:40px;
+    margin: 0 auto;
+    float:left;
+    display: inline;
+    position: relative;
+}
+
+.menu{
+    width: 280px;
+    margin: 0 auto;
+    float:left;
+    display: inline;
+    position: relative;
+}
+
+.section {
+    padding-left:30px;
+    margin-bottom:60px;
+}
+
+p {
+    padding-left:20px;
+}
+
+code {
+        margin: 0 0 20px 20px;
+        padding: 20px;
+        clear: both;
+        width: 550px;
+        border-radius: 0px;
+        color: #69697d;
+        overflow: auto;
+        border-style: none;
+        font: 14px/20px "Courier New", Courier, mono;
+        background-color: #f8f8f8;
+        display: block;
+    }
+
+ul {
+    padding-left:40px;
+    list-style:circle;
+    margin-bottom:20px;
+}
+
+.menusection {
+    margin-bottom:20px;
+}
+
+.menusection a {
+    display: block;
+}
+
+.sublink {
+    font-size:11px;
+    padding-left:10px;
+}
+
+/* Helper classes
+================================================== */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+} /* responsive images */
+.align-right {
+    text-align: right
+}
+.align-center {
+    text-align:center;
+}
+
+.float-left {
+    float:left;
+}
+
+.float-right {
+    float:right;
+}
+
+/* Blockquotes
+================================================== */
+blockquote {
+    border-left: 5px solid #777;
+    padding-left: 13px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-style: italic;    
+}
+blockquote.right {
+    border-right: 5px solid #777;
+    padding-right: 13px;
+    border-left: 0;
+    padding-left: 0;
+    text-align: right;
+}
+blockquote span {
+    font-size: 11px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Dividers
+================================================== */
+.divider {
+    border-top:1px solid #e2e2e2;
+    border-bottom:1px solid #e2e2e2;
+    height: 3px;
+    clear: both;
+    width:100%;
+    margin:-10px 0 40px ;
+}
+
+.bigdivider {
+    border-top:1px solid #e2e2e2;
+    border-bottom:1px solid #e2e2e2;
+    height: 3px;
+    clear: both;
+    width:100%;    
+    margin:30px 0 40px ;
+}
+/* Buttons
+================================================== */
+button {
+    position: relative;
+    cursor: pointer;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;    
+    color: #8f5c2f;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 8px 16px;
+    text-align: center;
+    background: #ffbf44;
+    background: -moz-linear-gradient(0% 100% 90deg, #ffbf44, #ffd972);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffd972), to(#ffbf44));
+    border: 1px solid #f7ac39;
+    border-bottom: 5px solid #f7ac39;
+    -moz-box-shadow: inset 0 0 0 1px #fce69a, 0 1px 2px 0  rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 0 0 0 1px #fce69a, 0 1px 2px 0  rgba(0,0,0,0.2);
+    -webkit-background-clip: padding-box;
+    height:37px;
+    margin-bottom:5px;
+}
+button:hover {
+    background: #ffd972;
+    background: -moz-linear-gradient(0% 100% 90deg, #ffd972, #ffbf44);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffbf44), to(#ffd972));
+}
+button:active {
+    border-bottom: 1px solid #f7ac39;
+    height:32px;
+    margin-top:5px;
+}
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+/* Big */
+button.big {
+    font-size: 14px;
+    padding: 20px;
+    width: 100%;
+    height:70px;
+}
+
+button.big:active {
+    height:65px;
+}
